@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parentRR"
+    android:layout_height="wrap_content"
+    android:background="#e2e0e0"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="10dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/projectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Robot machine progam"
+                android:textColor="@color/boldText"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/diverder1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/projectName"
+                android:layout_marginTop="2dp"
+                android:background="@color/divider"
+                android:orientation="horizontal" />
+
+
+            <LinearLayout
+                android:id="@+id/meta_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diverder1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="URL"
+                        android:textColor="@color/secondaryText" />
+
+                    <TextView
+                        android:id="@+id/url_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="http://codebeautify.org/jsonviewer"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textColor="@color/secondaryText" />
+
+                    <TextView
+                        android:id="@+id/days_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2220"
+                        android:textColor="@color/primaryText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Host Name"
+                        android:textColor="@color/secondaryText" />
+
+                    <TextView
+                        android:id="@+id/hostname_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="http://codebeautify.org/jsonviewer"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/diverder2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/meta_detail"
+                android:layout_marginTop="4dp"
+                android:background="@color/divider"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_below="@id/diverder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_weight=".4"
+                android:id="@+id/publicationLL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/diverder2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/publisher_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Robot machine progam"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Publication"
+                    android:textColor="@color/secondaryText"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/catogeryll"
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/catogery_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Bus"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Category"
+                        android:textColor="@color/secondaryText"
+                        android:textSize="10sp" />
+
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/like"
+                        android:paddingTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:src="@drawable/unlike"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

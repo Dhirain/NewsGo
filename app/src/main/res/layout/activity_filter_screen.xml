@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/filter_type_list"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:background="@color/background_grey"
+        android:layout_marginBottom="45dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sortTV"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Sort"
+            android:paddingStart="5dp"
+            android:textColor="@color/primaryText"
+            android:background="@color/white"
+            android:gravity="left|center"/>
+
+        <TextView
+            android:id="@+id/publisherTV"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Publisher"
+            android:layout_marginTop="2dp"
+            android:paddingStart="5dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/primaryText"
+            android:gravity="left|center"/>
+
+        <TextView
+            android:id="@+id/categoryTV"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Catogery"
+            android:paddingStart="5dp"
+            android:textColor="@color/primaryText"
+            android:gravity="left|center"/>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_toEndOf="@+id/filter_type_list"
+        android:id="@+id/catogery_publisher_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="45dp"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/sort_ll"
+        android:layout_toEndOf="@+id/filter_type_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:visibility="visible"
+        android:layout_marginBottom="45dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp">
+
+            <RadioButton
+                android:id="@+id/desc_RB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Old to New" />
+
+            <RadioButton
+                android:id="@+id/asc_RB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="New to Old" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/clearAll"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:text="Clear All"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@color/white"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/applyAll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Apply Filters"
+        android:layout_toEndOf="@+id/clearAll"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
