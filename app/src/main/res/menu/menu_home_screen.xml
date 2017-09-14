@@ -26,7 +26,7 @@
         <menu>
             <item
                 android:id="@+id/action_offline"
-                android:title="Offline"
+                android:title="Offline mode"
                 app:showAsAction="ifRoom"/>
         </menu>
     </item>
